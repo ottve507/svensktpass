@@ -10,7 +10,7 @@ email_text = "mailforthe@booking.com"
 tel = "0721234567"
 early_time = datetime.strptime("2022-04-29 08:20:00", '%Y-%m-%d %H:%M:%S')
 late_time = datetime.strptime("2022-05-20 08:20:00", '%Y-%m-%d %H:%M:%S')
-location_of_chrome_driver = r"C:\Users\otto.velander\Documents\scrapefun\chromedriver.exe" # Might neeed to redo for mac.
+location_of_chrome_driver = r"C:\Users\user.name\Documents\chromedriver.exe" # Might neeed to redo for mac.
 start_page_to_look_for_time_slots = "https://bokapass.nemoq.se/Booking/Booking/Index/stockholm"
 number_of_people = 3 #minimum one person
 
@@ -21,7 +21,11 @@ personarray = [person2, person3] #put all the additional people in. If no additi
 ######Info required (END)######
 
 def main():
-    booker.go_to_police()
+    try:
+        booker.go_to_police()
+    except Exception:
+        traceback.print_exc()
+        time.sleep(10000)
 
 
 #Initialize booker class
