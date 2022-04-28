@@ -19,6 +19,8 @@ Change the values in "main.py":
 4) The latest time you want to book your pasport
 5) Location of your downloaded chromedriver
 6) Optional: Location of region where you would like to book a time (E.g. https://bokapass.nemoq.se/Booking/Booking/Index/stockholm for Stockholm, https://bokapass.nemoq.se/Booking/Booking/Index/gotland for Gotland)
+7) The number of people the booking concerns
+8) The names and social security numbers of additional people (optional - clear out before using)
 
 ## Run the damn thing
 Prepare your mobile ID so that you can scan the QR code.
